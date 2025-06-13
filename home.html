@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8"/>
-  <title>Portfolio Website - Home</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts - Inter -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Link to external CSS file -->
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"/>
+  <title>Responsive Navigation Bar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-50 text-black-800">
 
-<!-- Navigation Bar -->
-<nav class="bg-gradient-to-r from-blue-600 to-light bg-blue-800 p-4 shadow-lg sticky top-0 z-50 rounded-b-xl">
-  <div class="container mx-auto flex justify-between items-center">
-    <div class="logo text-white text-2xl font-bold rounded-lg px-3 py-1 bg-blue-700 shadow-md">
-      <span>MY RESUME</span>
-    </div>
+<nav class="bg-gradient-to-r from-blue-600 to-blue-800 p-4 shadow-lg sticky top-0 z-50 rounded-b-xl">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="logo text-white text-2xl font-bold rounded-lg px-3 py-1 bg-blue-700 shadow-md">
+      <span>MY RESUME</span>
+    </div>
+        <div class="hidden md:flex space-x-6">
+      <a href="home.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">Home</a>
+      <a href="about me.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">About Me</a>
+      <a href="resume.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">Resume</a>
+      <a href="gallery.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">Gallery</a>
+      <a href="contact.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">Contact</a>
+    </div>
+        <button class="md:hidden text-white text-2xl focus:outline-none" onclick="toggleMobileMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+    <div id="mobile-menu" class="hidden md:hidden mt-4 bg-blue-700 rounded-lg shadow-xl py-2">
+    <a href="home.html" class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md">Home</a>
+    <a href="about me.html" class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md">About Me</a>
+    <a href="gallery.html" class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md">Gallery</a>
+    <a href="resume.html" class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md">Resume</a>
+    <a href="contact.html" class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md">Contact</a>
+  </div>
+</nav>
+
     <!-- Desktop Navigation Links -->
     <div class="hidden md:flex space-x-6">
       <a href="home.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">Home</a>
