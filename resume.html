@@ -152,6 +152,25 @@
 </section>
 
 <script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const toggleButton = document.getElementById('certificates-toggle');
+  const certificatesList = document.getElementById('certificates-list');
+  const toggleIcon = document.getElementById('toggle-icon');
+  const toggleText = document.getElementById('toggle-text'); // <-- New: Get the span for the text
+
+  toggleButton.addEventListener('click', function() {
+    certificatesList.classList.toggle('hidden');
+
+    if (certificatesList.classList.contains('hidden')) {
+      toggleText.textContent = 'Show Certificates'; // <-- Updated: Change text in the span
+      toggleIcon.classList.remove('fa-chevron-up');
+      toggleIcon.classList.add('fa-chevron-down');
+    } else {
+      toggleText.textContent = 'Hide Certificates'; // <-- Updated: Change text in the span
+      toggleIcon.classList.remove('fa-chevron-down');
+      toggleIcon.classList.add('fa-chevron-up');
+    }
+    
   // JavaScript for mobile menu toggle
   function toggleMobileMenu() {
     const mobileMenu = document.getElementById('mobile-menu');
@@ -178,9 +197,7 @@
         toggleIcon.classList.remove('fa-chevron-down');
         toggleIcon.classList.add('fa-chevron-up');
       }
-      // Re-append the icon element to the button after text change
-      toggleButton.appendChild(toggleIcon);
-
+     
   function toggleMobileMenu() {
     const mobileMenu = document.getElementById('mobile-menu');
     mobileMenu.classList.toggle('hidden');
