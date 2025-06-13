@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8"/>
+  <title>Portfolio Website - About Me</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts - Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Navigation Bar -->
+<nav class="bg-gradient-to-r from-blue-600 to-blue-800 p-4 shadow-lg sticky top-0 z-50 rounded-b-xl">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="logo text-white text-2xl font-bold rounded-lg px-3 py-1 bg-blue-700 shadow-md">
+      <span>ABOUT ME</span>
+    </div>
+    <!-- Desktop Navigation Links -->
+    <div class="hidden md:flex space-x-6">
+      <a href="home.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">Home</a>
+      <a href="about me.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">About Me</a>
+      <a href="resume.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">Resume</a>
+      <a href="gallery.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">Gallery</a>
+      <a href="contact.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">Contact</a>
+    </div>
+    <!-- Hamburger Icon for Mobile -->
+    <button class="md:hidden text-white text-2xl focus:outline-none" onclick="toggleMobileMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden md:hidden mt-4 bg-blue-700 rounded-lg shadow-xl py-2">
+    <a href="home.html" class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md">Home</a>
+    <a href="about me.html" class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md">About Me</a>
+    <a href="resume.html" class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md">Resume</a>
+    <a href="contact.html" class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md">Contact</a>
+  </div>
+</nav>
+
+<!-- About Me Section -->
+<section id="About_Me_Section" class="py-12 px-4">
+  <div class="container mx-auto bg-white p-8 rounded-2xl shadow-xl">
+    <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-10 pb-4 border-b-4 border-blue-500 inline-block mx-auto rounded-lg px-4">About Me</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- My Passion Section -->
+      <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 transform hover:scale-105 transition-transform duration-300 ease-in-out">
+        <h3 class="text-2xl font-bold text-blue-800 mb-4">MY PASSION</h3>
+        <p class="text-justify text-lg text-gray-700 leading-relaxed">
+          I'm passionate about sports, especially hiking. I love hiking with my friends whenever I have free time. It's not just a hobby for me, but also a way to stay fit and motivated.
+          <br><br>
+          Hiking has taught me many valuable lessons. It has instilled in me a strong work ethic and perseverance as I've faced many challenges on various trails. Through team-based hiking challenges, I've learned how to collaborate and work towards collective success, fostering a supportive environment along the way.
+          <br><br>
+          These activities have demonstrated my physical endurance and resilience, especially when covering challenging terrains and long distances. I believe this perseverance translates into all areas of my life, constantly pushing me to strive for more and grow through challenges.
+        </p>
+      </div>
+
+      <!-- Career Goals Section -->
+      <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 transform hover:scale-105 transition-transform duration-300 ease-in-out">
+        <h3 class="text-2xl font-bold text-blue-800 mb-4">CAREER GOALS</h3>
+        <p class="text-justify text-lg text-gray-700 leading-relaxed">
+          Explore various career paths within my field of study through internships and informational interviews, gaining practical experience and clarifying my interests.
+          <br><br>
+          Develop a strong foundational understanding of specific skills, through coursework, online certifications, and personal projects, making me a competitive candidate for entry-level roles.
+          <br><br>
+          Enhance my soft skills and abilities by actively participating in relevant activities to prepare me for collaborative professional environments, raising self-awareness and a commitment to personal growth.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

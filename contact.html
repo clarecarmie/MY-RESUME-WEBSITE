@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8"/>
+  <title>Portfolio Website - Contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts - Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Navigation Bar -->
+<nav class="bg-gradient-to-r from-blue-600 to-blue-800 p-4 shadow-lg sticky top-0 z-50 rounded-b-xl">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="logo text-white text-2xl font-bold rounded-lg px-3 py-1 bg-blue-700 shadow-md">
+      <span>CONTACT</span>
+    </div>
+    <!-- Desktop Navigation Links -->
+    <div class="hidden md:flex space-x-6">
+      <a href="home.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">Home</a>
+      <a href="about me.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">About Me</a>
+      <a href="resume.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">Resume</a>
+      <a href="gallery.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">Gallery</a>
+      <a href="contact.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">Contact</a>
+    </div>
+    <!-- Hamburger Icon for Mobile -->
+    <button class="md:hidden text-white text-2xl focus:outline-none" onclick="toggleMobileMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden md:hidden mt-4 bg-blue-700 rounded-lg shadow-xl py-2">
+    <a href="home.html" class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md">Home</a>
+    <a href="about me.html" class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md">About Me</a>
+    <a href="resume.html" class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md">Resume</a>
+    <a href="contact.html" class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md">Contact</a>
+  </div>
+</nav>
+
+<!-- Contact Me Section -->
+<section id="contact_me_section" class="py-12 px-4 flex items-center justify-center min-h-screen">
+  <div class="container mx-auto bg-white p-8 rounded-2xl shadow-xl max-w-2xl">
+    <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-10 pb-4 border-b-4 border-blue-500 inline-block mx-auto rounded-lg px-4">Contact Me</h2>
+
+    <form action="mailto:clayrisa.mimiee6@gmail.com" method="post" enctype="text/plain" class="space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label for="name" class="block text-lg font-bold text-gray-700 mb-2">NAME</label>
+          <input type="text" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                 id="name" name="name" value="CLAYRISA CARMIE ANAK PONY" required>
+        </div>
+        <div>
+          <label for="email" class="block text-lg font-bold text-gray-700 mb-2">EMAIL</label>
+          <input type="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                 id="email" name="email" value="clayrisa.mimiee6@gmail.com" required>
+        </div>
+        <!-- Phone Number Section -->
+        <div>
+          <label for="phone" class="block text-lg font-bold text-gray-700 mb-2">PHONE NUMBER</label>
+          <input type="text" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                 id="phone" name="phone" value="0128980371" required>
+        </div>
+      </div>
+      <div>
+        <label for="message" class="block text-lg font-bold text-gray-700 mb-2">MESSAGE</label>
+        <textarea class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  id="message" name="message" rows="5" placeholder="Enter your message here..."></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg text-lg
+                                     transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300">
+          SEND MESSAGE
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>

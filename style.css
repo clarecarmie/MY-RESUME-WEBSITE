@@ -1,0 +1,130 @@
+/* HOME */
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom styling for table borders - this is from the resume page,
+   but kept here for consistency if this style.css were shared across pages.
+   However, table styles are now applied directly with Tailwind in the resume page HTML. */
+table, th, td {
+  border: 1px solid #e2e8f0; /* Tailwind's border-gray-300 */
+}
+
+/* Ensure the hamburger icon is visible when the dropdown is hidden on small screens */
+@media (max-width: 767px) {
+    /* This rule hides desktop navigation links on smaller screens.
+       The current HTML uses 'hidden md:flex' so this specific rule might be redundant
+       depending on your exact navigation implementation, but it reflects the intent. */
+    .nav-container .links {
+        display: none;
+    }
+}
+
+/* This rule is for a '.dropdown.active' class that might be used to explicitly show a mobile menu.
+   In the provided HTML, the mobile menu visibility is controlled by toggling the 'hidden'
+   Tailwind class on the '#mobile-menu' element directly with JavaScript. */
+.dropdown.active {
+    display: block;
+}
+
+
+/* ABOUT ME */
+
+body {
+  font-family: 'Inter', sans-serif; /* Apply Inter font globally */
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(0, 108, 186);
+}
+::-webkit-scrollbar-thumb {
+  background: #A8DADC;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+
+/* Specific styles for the navigation, as it's not fully Tailwind in the original version */
+/* Ensure the hamburger icon is visible when the dropdown is hidden on small screens */
+@media (max-width: 767px) {
+    /* This rule hides desktop navigation links on smaller screens. */
+    .nav-container .links { /* This class would be used if you had a custom nav-container for the desktop links */
+        display: none;
+    }
+}
+
+/* This rule is for a '.dropdown.active' class if you were explicitly adding/removing it for showing mobile menu.
+   In the provided HTML, the mobile menu visibility is controlled by toggling the 'hidden'
+   Tailwind class on the '#mobile-menu' element directly with JavaScript. */
+.dropdown.active {
+    display: block;
+}
+
+
+/* RESUME */
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom styling for table borders */
+table, th, td {
+  border: 1px solid #e2e8f0; /* Tailwind's border-gray-300 */
+}
+
+/* Ensure the hamburger icon is visible when the dropdown is hidden */
+@media (max-width: 767px) {
+    .nav-container .links {
+        display: none; /* Hide desktop links on mobile */
+    }
+}
+
+/* Show the mobile dropdown menu */
+.dropdown.active {
+    display: block;
+}
+
+/* CONTACT ME */
+
+body {
+  font-family: 'Inter', sans-serif; /* Apply Inter font globally */
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(0, 108, 186);
+}
+::-webkit-scrollbar-thumb {
+  background: #A8DADC;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+
+/* Specific styles for the navigation, as it's not fully Tailwind in the original version */
+/* Ensure the hamburger icon is visible when the dropdown is hidden on small screens */
+@media (max-width: 767px) {
+    /* This rule hides desktop navigation links on smaller screens. */
+    .nav-container .links { /* This class would be used if you had a custom nav-container for the desktop links */
+        display: none;
+    }
+}
+
+/* This rule is for a '.dropdown.active' class if you were explicitly adding/removing it for showing mobile menu.
+   In the provided HTML, the mobile menu visibility is controlled by toggling the 'hidden'
+   Tailwind class on the '#mobile-menu' element directly with JavaScript. */
+.dropdown.active {
+    display: block;
+}

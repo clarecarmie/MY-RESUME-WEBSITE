@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8"/>
+  <title>Portfolio Website - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts - Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-black-800">
+
+<!-- Navigation Bar -->
+<nav class="bg-gradient-to-r from-blue-600 to-light bg-blue-800 p-4 shadow-lg sticky top-0 z-50 rounded-b-xl">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="logo text-white text-2xl font-bold rounded-lg px-3 py-1 bg-blue-700 shadow-md">
+      <span>MY RESUME</span>
+    </div>
+    <!-- Desktop Navigation Links -->
+    <div class="hidden md:flex space-x-6">
+      <a href="home.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">Home</a>
+      <a href="about me.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">About Me</a>
+      <a href="resume.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">Resume</a>
+      <a href="gallery.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">Gallery</a>
+      <a href="contact.html" class="text-white hover:text-blue-200 transition duration-300 ease-in-out font-medium">Contact</a>
+    </div>
+    <!-- Hamburger Icon for Mobile -->
+    <button class="md:hidden text-white text-2xl focus:outline-none" onclick="toggleMobileMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden md:hidden mt-4 bg-blue-700 rounded-lg shadow-xl py-2">
+    <a href="home.html" class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md">Home</a>
+    <a href="about me.html" class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md">About Me</a>
+    <a href="resume.html" class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md">Resume</a>
+    <a href="contact.html" class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md">Contact</a>
+  </div>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="py-16 px-4 flex items-center justify-center min-h-screen">
+  <div class="container mx-auto bg-white p-8 rounded-2xl shadow-xl flex flex-col md:flex-row items-center justify-center gap-12">
+    <!-- Profile Image -->
+    <div class="flex-shrink-0">
+      <img src="clayrisa_photo.jpg" alt="Clayrisa Carmie Anak Pony"
+           class="rounded-full w-64 h-64 object-cover border-4 border-blue-500 shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
+    </div>
+
+    <!-- Content Area -->
+    <div class="flex-grow text-center md:text-left">
+      <h1 class="text-4xl sm:text-5x2 lg:text-5xl font-extrabold text-grey-900 mb-6 leading-tight" data-aos="fade-left">
+        Hye, my name is
+        <span class="block text-blue-600 mt-2">Clayrisa Carmie Anak Pony</span>
+      </h1>
+
+      <p class=" text-justify text-lg text-black-700 leading-relaxed mb-8 max-w-2x3 mx-auto md:mx-0">
+        A student with strong analytical and problem-solving skills, gained through coursework and a passion for customer service. Eager to apply theoretical knowledge to real-world challenges and contribute positively to a team. Seeking hands-on experience and to develop new skills.
+      </p>
+
+      <!-- Social Links -->
+      <div class="flex justify-center md:justify-start space-x-6 mb-8">
+        <a href="https://www.facebook.com/clayrisa.carmie?mibextid=ZbWKwL" target="_blank"
+           class="text-blue-600 hover:text-blue-800 text-3xl transition-colors duration-300 transform hover:scale-110">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/cc.carmieeee?igsh=NmY0azRhYXBpeW53" target="_blank"
+           class="text-pink-600 hover:text-pink-800 text-3xl transition-colors duration-300 transform hover:scale-110">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/60128980371" target="_blank"
+           class="text-green-600 hover:text-green-800 text-3xl transition-colors duration-300 transform hover:scale-110">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <!-- Button -->
+      <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg text-lg
+                     transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300">
+        For Further Enquiries
+      </button>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
+
